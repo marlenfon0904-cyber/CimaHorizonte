@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yanet Fonseca</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="viviendas.html">Viviendas</a>
+            <a href="monto.html">Créditos</a>
+            <a href="registro.html">Ag. Cita</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Yanet Fonseca</h1>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #f8f9fa;"></path>
+            </svg></div>
+    </header>
+    <main>
+<section class="creditos-seccion">
+    <div class="contenedor-creditos">
+        
+        <div class="creditos-encabezado">
+            <h2>Opciones de Crédito</h2>
+            <p>Te asesoramos en el trámite de tu crédito hipotecario sin costo adicional.</p>
+        </div>
+
+        <div class="grid-creditos">
+            <!-- Tarjeta INFONAVIT -->
+            <div class="tarjeta-credito">
+                <div class="logo-contenedor">
+                    <img src="img/Infonavit.png" alt="Logotipo Infonavit">
+                </div>
+                <h3>Crédito INFONAVIT</h3>
+                <a href="monto.html#infonavit" class="btn-credito">Ver Requisitos</a>
+            </div>
+
+            <!-- Tarjeta FOVISSSTE -->
+            <div class="tarjeta-credito">
+                <div class="logo-contenedor">
+                    <img src="img/Fovissste.png" alt="Logotipo Fovissste">
+                </div>
+                <h3>Crédito FOVISSSTE</h3>
+                <a href="monto.html#fovissste" class="btn-credito">Ver Requisitos</a>
+            </div>
+        </div>
+<br>
+            <div class="grid-creditos">
+            <!-- Tarjeta Bancario -->
+            <div class="tarjeta-credito">
+                <div class="logo-contenedor">
+                    <img src="img/Bancario.png" alt="Logotipo Bancario">
+                </div>
+                <h3>Crédito Bancario</h3>
+                <a href="monto.html#bancario" class="btn-credito">Ver Requisitos</a>
+            </div>
+
+            <!-- Tarjeta contado -->
+            <div class="tarjeta-credito">
+                <div class="logo-contenedor">
+                    <img src="img/Contado.png" alt="Logotipo contado">
+                </div>
+                <h3>Contado</h3>
+                <a href="monto.html#contado" class="btn-credito">Ver Requisitos</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ========================================== -->
+<!-- SECCIÓN PRINCIPAL: OPCIONES DE CRÉDITO     -->
+<!-- ========================================== -->
+<section id="creditos" class="seccion-creditos">
+    <div class="contenedor-viviendas-extendido">
+
+        <!-- 2. DETALLE INTERACTIVO (PESTAÑAS Y CONTENIDO) -->
+        <div class="contenedor-detalle-credito">
+            
+            <!-- Pestañas de Selección (4 botones redondos) -->
+            <div class="pestañas-creditos">
+                <button class="pestana-btn activa" onclick="cambiarCredito(this, 'infonavit')">Infonavit</a></button>
+                <button class="pestana-btn" onclick="cambiarCredito(this, 'fovissste')">Fovissste</a></button>
+                <button class="pestana-btn" onclick="cambiarCredito(this, 'bancario')">Créditos</a></button>
+                <button class="pestana-btn" onclick="cambiarCredito(this, 'contado')">Créditos</a></button>
+            </div>
+
+            <!-- Panel de Contenido Cambiante -->
+            <div class="tarjeta-info-credito">
+                
+                <!-- Panel 1: INFONAVIT (Inicia visible) -->
+                <div id="info-infonavit" class="contenido-credito activo">
+                    <div class="grid-credito-columna">
+                        <div class="texto-credito">
+                            <h3>Requisitos para Crédito Infonavit</h3>
+                            <p>Te apoyamos a tramitar tu crédito Infonavit tradicional, Unamos Créditos o Cofinavit para adquirir tu casa o departamento en Cima Horizonte.</p>
+                            <ul class="lista-requisitos">
+                                <li><i class="fa-solid fa-check-circle"></i> Contar con la precalificación mínima (1080 puntos).</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Estar con relación laboral vigente.</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Identificación oficial vigente (INE o Pasaporte).</li>
+                                <li><i class="fa-solid fa-check-circle"></i> CURP y Acta de Nacimiento actualizada.</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Comprobante de domicilio reciente.</li>
+                            </ul>
+                        </div>
+                        <div class="imagen-credito-box">
+                            <img src="img/asesoria-credito.jpg" alt="Asesoría de Crédito Infonavit">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 2: FOVISSSTE -->
+                <div id="info-fovissste" class="contenido-credito">
+                    <div class="grid-credito-columna">
+                        <div class="texto-credito">
+                            <h3>Requisitos para Crédito Fovissste</h3>
+                            <p>Aprovecha tu crédito Fovissste Tradicional o Fovissste para Todos para estrenar tu vivienda con nosotros.</p>
+                            <ul class="lista-requisitos">
+                                <li><i class="fa-solid fa-check-circle"></i> Ser trabajador del estado activo.</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Tener al menos 18 meses de aportaciones en el SAR.</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Identificación oficial vigente.</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Expediente de servicio o talón de pago reciente.</li>
+                            </ul>
+                        </div>
+                        <div class="imagen-credito-box">
+                            <img src="img/asesoria-credito.jpg" alt="Asesoría Fovissste">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 3: BANCARIO -->
+                <div id="info-bancario" class="contenido-credito">
+                    <div class="grid-credito-columna">
+                        <div class="texto-credito">
+                            <h3>Requisitos para Crédito Bancario</h3>
+                            <p>Gestionamos tu crédito hipotecario con los principales bancos (BBVA, Banorte, Santander, Scotiabank) para obtener las mejores tasas.</p>
+                            <ul class="lista-requisitos">
+                                <li><i class="fa-solid fa-check-circle"></i> Buen historial en Buró de Crédito.</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Comprobantes de ingresos (Recibos de nómina o estados de cuenta).</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Edad entre 25 y 65 años.</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Antigüedad laboral mínima de 1 año.</li>
+                            </ul>
+                        </div>
+                        <div class="imagen-credito-box">
+                            <img src="img/asesoria-credito.jpg" alt="Asesoría Bancaria">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Panel 4: PAGO DE CONTADO -->
+                <div id="info-contado" class="contenido-credito">
+                    <div class="grid-credito-columna">
+                        <div class="texto-credito">
+                            <h3>Pago de Contado / Recursos Propios</h3>
+                            <p>Adquiere tu propiedad mediante pago directo y aprovecha esquemas de descuento especiales sobre el precio de lista.</p>
+                            <ul class="lista-requisitos">
+                                <li><i class="fa-solid fa-check-circle"></i> Apartado inicial de la propiedad.</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Firma de contrato de compraventa.</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Identificación oficial vigente y RFC.</li>
+                                <li><i class="fa-solid fa-check-circle"></i> Liquidación al momento de la escrituración ante notario.</li>
+                            </ul>
+                        </div>
+                        <div class="imagen-credito-box">
+                            <img src="img/asesoria-credito.jpg" alt="Pago de Contado">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+</section>
+<script src="script.js"></script>
+</main>
+
+<footer class="footer">
+    <div class="contenedor-footer">
+        <!-- Lado Izquierdo -->
+        <div class="redes-sociales">
+            <a href="https://wa.me/5216691061435?text=Hola,%20me%20interesa%20solicitar%20información"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/yanet.fonseca.04?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/janetfonseca429?dlrf=MTVjanpudHFsODQwYw=="><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <!-- Centro exacto -->
+        <div class="copyright">
+            <p>© Asesora | Lilia Yanet Fonseca Suárez</p>
+        </div>
+
+        <!-- Lado Derecho -->
+        <nav class="footer-nav">
+            <a href="index.html">Inicio</a>
+            <a href="viviendas.html">Viviendas</a>
+            <a href="monto.html">Créditos</a>
+            <a href="registro.html">Ag. Cita</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+</footer>
+</body>
+
+</html>

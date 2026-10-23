@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yanet Fonseca</title>
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="viviendas.html">Viviendas</a>
+            <a href="monto.html">Créditos</a>
+            <a href="registro.html">Ag. Cita</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <section class="textos-header">
+            <h1>Yanet Fonseca</h1>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #f8f9fa;"></path>
+            </svg></div>
+    </header>
+    <main>
+<section class="cita-seccion">
+    <div class="contenedor-cita">
+        
+        <div class="cita-encabezado">
+            <h2>Agenda tu Cita</h2>
+            <p>Elige el día y la hora que mejor te convenga para recibir asesoría personalizada sobre tu vivienda o crédito.</p>
+        </div>
+
+        <div class="tarjeta-formulario">
+            <form id="formRegistroCita" class="formulario-cita">
+                
+                <div class="grupo-campo">
+                    <label for="nombreCompleto"><i class="fa-solid fa-user"></i> Nombre completo</label>
+                    <input type="text" id="nombreCompleto" name="nombre" placeholder="Ej. Ana López" required>
+                </div>
+
+                <div class="grid-dos-columnas">
+                    <div class="grupo-campo">
+                        <label for="telefonoCliente"><i class="fa-solid fa-phone"></i> Teléfono (WhatsApp)</label>
+                        <input type="tel" id="telefonoCliente" name="telefono" placeholder="Ej. 669 123 4567" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="correoCliente"><i class="fa-solid fa-envelope"></i> Correo electrónico</label>
+                        <input type="email" id="correoCliente" name="correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+                </div>
+
+                <div class="grid-dos-columnas">
+                    <div class="grupo-campo">
+                        <label for="tipoCredito"><i class="fa-solid fa-building-columns"></i> Tipo de Crédito de Interés</label>
+                        <select id="tipoCredito" name="credito" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="Infonavit">Infonavit</option>
+                            <option value="Fovissste">Fovissste</option>
+                            <option value="Bancario">Crédito Bancario</option>
+                            <option value="Contado">Pago de Contado</option>
+                            <option value="Otro">Otro / Requiero Asesoría</option>
+                        </select>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="tipoVivienda"><i class="fa-solid fa-house"></i> Interés de Vivienda</label>
+                        <select id="tipoVivienda" name="vivienda">
+                            <option value="" disabled selected>Selecciona la opción</option>
+                            <option value="Casa">Casa</option>
+                            <option value="Departamento">Departamento</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid-dos-columnas">
+                    <div class="grupo-campo">
+                        <label for="fechaCita"><i class="fa-solid fa-calendar-days"></i> Fecha de la cita</label>
+                        <input type="date" id="fechaCita" name="fecha" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="horaCita"><i class="fa-solid fa-clock"></i> Hora sugerida</label>
+                        <input type="time" id="horaCita" name="hora" required>
+                    </div>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="notasCliente"><i class="fa-solid fa-comment-dots"></i> Comentarios o dudas (Opcional)</label>
+                    <textarea id="notasCliente" name="notas" rows="3" placeholder="¿Tienes alguna duda específica sobre la ubicación, puntos o requisitos?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-agendar"><i class="fa-solid fa-calendar-check"></i> Confirmar y Agendar Cita</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+    </main>
+
+<footer class="footer">
+    <div class="contenedor-footer">
+        <!-- Lado Izquierdo -->
+        <div class="redes-sociales">
+            <a href="https://wa.me/5216691061435?text=Hola,%20me%20interesa%20solicitar%20información"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/yanet.fonseca.04?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/janetfonseca429?dlrf=MTVjanpudHFsODQwYw=="><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <!-- Centro exacto -->
+        <div class="copyright">
+            <p>© Asesora | Lilia Yanet Fonseca Suárez</p>
+        </div>
+
+        <!-- Lado Derecho -->
+        <nav class="footer-nav">
+            <a href="index.html">Inicio</a>
+            <a href="viviendas.html">Viviendas</a>
+            <a href="monto.html">Créditos</a>
+            <a href="registro.html">Ag. Cita</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>
